@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eve-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eve-app
+  template:
+    metadata:
+      labels:
+        app: eve-app
+    spec:
+      containers:
+        - name: eve-container
+          image: maxjagger0508/eve-app:latest
+          ports:
+            - containerPort: 8080
