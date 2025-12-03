@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: eve-container
-          image: maxjagger0508/eve-app:12345ab
+          image: maxjagger0508/eve-app:9734c96
           ports:
             - containerPort: 8080
