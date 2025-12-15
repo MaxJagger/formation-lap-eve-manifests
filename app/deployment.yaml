@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name: eve-container
-          image: maxjagger0508/eve-app:4199563
+          image: 192.168.1.18/matchacake-harbor-repo/eve-app:5cd9725
           ports:
             - containerPort: 8080
