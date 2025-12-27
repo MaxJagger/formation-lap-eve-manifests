@@ -14,7 +14,7 @@ spec:
         app: product-service
     spec:
       containers:
-      - name: product-service
-        image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/product-service:git-001
-        ports:
-        - containerPort: 8000
+        - name: product-service
+          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/product-service:46fe62ea9dd587407dbfd8966e0dbd347429075b
+          ports:
+            - containerPort: 8000

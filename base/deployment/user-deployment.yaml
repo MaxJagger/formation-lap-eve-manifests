@@ -14,8 +14,7 @@ spec:
         app: user-service
     spec:
       containers:
-      - name: user-service
-        image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/user-service:git-001
-        ports:
-        - containerPort: 8000
-
+        - name: user-service
+          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/user-service:46fe62ea9dd587407dbfd8966e0dbd347429075b
+          ports:
+            - containerPort: 8000
