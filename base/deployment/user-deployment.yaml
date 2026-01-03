@@ -4,7 +4,7 @@ metadata:
   name: user-service
   namespace: formation-lap
 spec:
-  replicas: 50
+  replicas: 1
   selector:
     matchLabels:
       app: user-service
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/user-service:latest
+          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/chan-user-service:latest
           ports:
             - containerPort: 8000
