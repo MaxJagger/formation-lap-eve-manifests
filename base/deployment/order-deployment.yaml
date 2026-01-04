@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/order-service:git-001
+          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/chan-order-service:git-001
           ports:
             - containerPort: 8000
