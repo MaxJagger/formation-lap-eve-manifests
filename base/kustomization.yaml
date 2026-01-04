@@ -9,5 +9,4 @@ resources:
   - services/user-service.yaml
   - services/order-service.yaml
   - services/product-service.yaml
-  - ingress.yaml
 
