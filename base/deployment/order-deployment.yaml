@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/chan-order-service:84a6bfd76699e9c133d7f4a6d00d1fc558fb6b61
+          image: 084375545045.dkr.ecr.ap-northeast-2.amazonaws.com/order-service:4084e75cfa90bb2282c40a95765714d13ab0e969
           ports:
             - containerPort: 8000
           env:
@@ -23,4 +23,3 @@ spec:
               value: "order-service"
             - name: OTEL_EXPORTER_OTLP_ENDPOINT
               value: "alloy-seoul-otlp.app-monitoring-seoul.svc.cluster.local:4317"
-
