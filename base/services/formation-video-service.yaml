@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: product-service
+  name: formation-video
   namespace: formation-lap
 spec:
   selector:
-    app: product-service
+    app: formation-video
   ports:
     - protocol: TCP
       port: 8000

@@ -1,25 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user-service
+  name: formation-video
   namespace: formation-lap
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: user-service
+      app: formation-video
   template:
     metadata:
       labels:
-        app: user-service
+        app: formation-video
     spec:
       containers:
-        - name: user-service
-          image: 404457776061.dkr.ecr.ap-northeast-2.amazonaws.com/chan-user-service:70d513e1d6a0909f48b259eeba55cee9685399c4
+        - name: formation-video
+          image: 000000000000.dkr.ecr.ap-northeast-2.amazonaws.com/formation-video:latest
           ports:
             - containerPort: 8000
           env:
             - name: OTEL_SERVICE_NAME
-              value: "user-service"
+              value: "formation-video"
             - name: OTEL_EXPORTER_OTLP_ENDPOINT
               value: "alloy-seoul-otlp.app-monitoring-seoul.svc.cluster.local:4317"
+

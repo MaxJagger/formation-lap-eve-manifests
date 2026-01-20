@@ -3,10 +3,10 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
-  - deployment/user-deployment.yaml
-  - deployment/order-deployment.yaml
-  - deployment/product-deployment.yaml
-  - services/user-service.yaml
-  - services/order-service.yaml
-  - services/product-service.yaml
+  - deployment/formation-user-deployment.yaml
+  - deployment/formation-search-deployment.yaml
+  - deployment/formation-video-deployment.yaml
+  - services/formation-user-service.yaml
+  - services/formation-search-service.yaml
+  - services/formation-video-service.yaml
 
