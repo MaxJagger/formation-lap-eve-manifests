@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: formation-user
-          image: 000000000000.dkr.ecr.ap-northeast-2.amazonaws.com/formation-user:latest
+          image: 084375545045.dkr.ecr.ap-northeast-2.amazonaws.com/formation-user:a9c801f284209622eef1dc8f243e5e09465664ea
           ports:
             - containerPort: 8000
           env:
@@ -23,4 +23,3 @@ spec:
               value: "formation-user"
             - name: OTEL_EXPORTER_OTLP_ENDPOINT
               value: "alloy-seoul-otlp.app-monitoring-seoul.svc.cluster.local:4317"
-
