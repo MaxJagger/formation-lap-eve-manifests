@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: formation-video
-          image: 084375545045.dkr.ecr.ap-northeast-2.amazonaws.com/formation-video:a9c801f284209622eef1dc8f243e5e09465664ea
+          image: 978285406261.dkr.ecr.ap-northeast-2.amazonaws.com/formation-video:a9c801f284209622eef1dc8f243e5e09465664ea
           ports:
             - containerPort: 8000
           env:
