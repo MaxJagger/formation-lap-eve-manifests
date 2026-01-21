@@ -4,7 +4,7 @@ metadata:
   name: formation-video
   namespace: formation-lap
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: formation-video
