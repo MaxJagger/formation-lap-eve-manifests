@@ -4,7 +4,7 @@ metadata:
   name: formation-user
   namespace: formation-lap
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: formation-user
